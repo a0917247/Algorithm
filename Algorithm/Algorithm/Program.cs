@@ -4,9 +4,10 @@ public class Program
     static void Main(string[] args)
     {
         int[] ints = { 2, 4, 2, 1, 5, 4, 6, 5, 6 };
+        int[] twoInt = { 2, 4, 2, 1, 5, 4, 6, 5, 6 , 2};
         int[] testarr = { 2, 5, 1, 6, 9, 0, 8, 7 };
         Code1_XOR_Test code = new Code1_XOR_Test();
-        code.XOR(ints);
+        code.OddTimesNum2(twoInt);
     }
     public static int[] RandomArray()
     {

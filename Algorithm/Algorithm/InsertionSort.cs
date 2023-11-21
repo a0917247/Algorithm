@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace algorithm
 {
-    public class Code1_InsertionSort
+    public class InsertionSort
     {
         //插入排序法
         // 0 ~ 0 有序
         // 0 ~ N 有序
-        public void InsertionSort(int[] arr) 
+        public void Insertionsort(int[] arr) 
         {
             if (arr == null || arr.Length < 2) 
             {

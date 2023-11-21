@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace algorithm
 {
-    public class Code1_BubbleSort
+    public class BubbleSort
     {
         //i跟i++比較，誰大誰往右移
         //0 ~ 5 排序
         //0 ~ 4 排序
-        public void Bubbleort2(int[] arr)
+        public void Bubblesort2(int[] arr)
         {
             if (arr.Length < 2 || arr == null)
             {
@@ -29,7 +29,7 @@ namespace algorithm
             }
             Print(arr);
         }
-        public void BubleSort(int[] arr)
+        public void Bubblsort(int[] arr)
         {
             if (arr.Length < 2 || arr == null)
             {

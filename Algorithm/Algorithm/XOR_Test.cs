@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace algorithm
 {
-    public class Code1_XOR_Test
+    public class XOR_Test
     {
         // 重複陣列中找到不重複的數
         public void XOR(int[] arr) 

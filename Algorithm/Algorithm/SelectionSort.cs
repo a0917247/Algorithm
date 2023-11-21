@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace algorithm
 {
-    public class Code1_SelectionSort
+    public class SelectionSort
     {
         //選擇排序法
         //1.有兩個不同的指針，一個指針指向當前index，另一個指針指向最小值，將最小值index與i對換
-        public void SelectionSort(int[] arr) 
+        public void Selectionsort(int[] arr) 
         {
             if (arr.Length < 2 || arr == null) {
                 return;

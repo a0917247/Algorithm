@@ -35,6 +35,8 @@ public class Program
     //    //    Print(arr);
     //    //}
     //}
+
+    
     public static void Print(int[] arr)
     {
         for (int i = 0; i < arr.Length; i++)
@@ -61,9 +63,14 @@ public class Program
 
     static void Main(string[] args) 
     {
-        BinaryTree binarytree = new BinaryTree();
-        binarytree.Root = new TreeNode(null);
-        Console.WriteLine(binarytree.Root.Value);
-        binarytree.Print();
+        BTree btree = new();
+        //btree.Root = new Node(1);
+        //btree.Root.Left = new Node(2);
+        //btree.Root.Right = new Node(3);
+        //btree.Root.Left.Left = new Node(4);
+        //btree.Root.Left.Right = new Node(5);
+        //btree.Root.Right.Left = new Node(6);
+        //btree.Root.Right.Right = new Node(7);
+        btree.BFS();
     }
 }

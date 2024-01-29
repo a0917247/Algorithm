@@ -7,11 +7,13 @@ using System.Xml.Serialization;
 
 namespace Algorithm
 {
+    //樹節點
     public class TreeNode
     {
         public int? Value { get; set; }
         public TreeNode? Right { get; set; }
         public TreeNode? Left { get; set; }
+
         /// <summary>
         /// Node : BinaryTree Node
         /// </summary>

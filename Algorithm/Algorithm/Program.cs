@@ -63,14 +63,8 @@ public class Program
 
     static void Main(string[] args) 
     {
-        BTree btree = new();
-        //btree.Root = new Node(1);
-        //btree.Root.Left = new Node(2);
-        //btree.Root.Right = new Node(3);
-        //btree.Root.Left.Left = new Node(4);
-        //btree.Root.Left.Right = new Node(5);
-        //btree.Root.Right.Left = new Node(6);
-        //btree.Root.Right.Right = new Node(7);
-        btree.BFS();
+        int[] intarr = { 1,2,3,4,5,6,7,8,};
+        BinarySearch binarySearch = new BinarySearch(intarr);
+        Console.WriteLine(binarySearch.BS(8));
     }
 }

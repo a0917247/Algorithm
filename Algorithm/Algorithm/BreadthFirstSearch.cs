@@ -71,5 +71,52 @@ namespace Algorithm
             BreadthFirstSearch(Root);
         }
 
+        public void GetMaxWidth(Node head)
+        {
+            if (head == null)
+            {
+                return;
+            }
+
+            Dictionary<Node, int> dic = new Dictionary<Node, int>();
+            dic.Add(head, 1);
+            Queue<Node> queue = new Queue<Node>();
+            queue.Enqueue(head);
+            int maxWidth = 0;
+            int curLevel = 1;
+            int nodesCount = 0;
+
+            while (queue.Count > 0)
+            {
+                Node cur = queue.Dequeue();
+                int nodeLevel = dic[cur];
+
+                if (curLevel == nodeLevel)
+                {
+                    nodesCount++;
+                }
+                else
+                {
+                    maxWidth = Math.Max(maxWidth, nodesCount);
+                    curLevel++;
+                    nodesCount = 1;
+                }
+
+                if (cur.Left != null)
+                {
+                    queue.Enqueue(cur.Left);
+                    dic.Add(cur.Left, nodeLevel + 1);
+                }
+                if (cur.Right != null)
+                {
+                    queue.Enqueue(cur.Right);
+                    dic.Add(cur.Right, nodeLevel + 1);
+                }
+            }
+
+            maxWidth = Math.Max(maxWidth, nodesCount);
+            Console.WriteLine($"MaxWidth is {maxWidth}");
+        }
+
     }
 }

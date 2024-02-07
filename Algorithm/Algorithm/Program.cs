@@ -1,5 +1,6 @@
 ﻿using Algorithm;
 using Algorithm.Extension;
+using Algorithm.LeetCode;
 
 namespace algorithm;
 public class Program
@@ -63,5 +64,8 @@ public class Program
 
     static void Main(string[] args) 
     {
+        int[] x = new int[10];
+        x[0] = 1;
+        Console.WriteLine(x[1]);
     }
 }

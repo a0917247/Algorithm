@@ -10,7 +10,7 @@ namespace Algorithm.LeetCode
     {
         public bool IsPalindrome(int x)
         {
-            if (x == null || x < 0)
+            if (x < 0)
             {
                 return false;
             }
